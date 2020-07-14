@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#c99f9e9e">
+
+
+    <Button
+        android:id="@+id/btn_play"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:minWidth="48dip"
+        android:text="@string/pause" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:text="00:00/00:00"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_toRightOf="@+id/tv_time"
+        android:layout_toLeftOf="@+id/btn_setting"
+        android:minWidth="200dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <Button
+        android:id="@+id/btn_setting"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_stop"
+        android:minWidth="30dip"
+        android:text="@string/smallScreen" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_volume"
+        android:minWidth="30dip"
+        android:text="@string/stop" />
+
+    <Button
+        android:id="@+id/btn_volume"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_recycle"
+        android:minWidth="30dip"
+        android:text="音量" />
+
+    <Button
+        android:id="@+id/btn_recycle"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:minWidth="30dip"
+        android:text="@string/recycle" />
+
+</RelativeLayout>
